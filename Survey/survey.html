@@ -1,0 +1,110 @@
+<!-- Abdul Hamid Nugroho -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1 id="title">SURVEY FORM</h1>
+	<div id="back-form">
+		<div id="img-div">
+			<img id="image" src="https://www.brandeps.com/logo-download/D/Dota2-01.png">
+		</div>
+		<p id="description">DOTA 2 - PLAYER</p>
+		<form id="survey-form" method="GET" action="http://dota2.com">
+			<div class="tab">
+				<div class="labels">
+					<label id="name-label" for="name">*Name : </label>
+				</div>
+				<div class="inputTab">
+					<input autofocus type="text" id="name" name="name" class="inputField" placeholder="Your name" required>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label id="email-label" for="email">*Email : </label>
+				</div>
+				<div class="inputTab">
+					<input type="email" id="email" name="email" class="inputField" placeholder="Your email" required>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label id="steam-id-label" for="id">*Steam ID : </label>
+				</div>
+				<div class="inputTab">
+					<input type="text" id="steam-id" name="steam-id" class="inputField" placeholder="Your Steam ID" required>
+				</div>
+			</div>	
+			<div class="tab">
+				<div class="labels">
+					<label id="number-label" for="age">*Age : </label>
+				</div>
+				<div class="inputTab">
+					<input type="number" id="number" name="age" class="inputField" min="1" max="100" placeholder="Your age" required>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label for="Role">*What is your most played role?</label>
+				</div>
+				<div class="inputTab">
+					<select id="dropdown" name="role" class="dropdown" required>
+						<option disabled value>Select your role:</option>
+						<option value="Midlane">1. Midlane</option>
+						<option value="Safelane">2. Safelane</option>
+						<option value="Offlane">3. Offlane</option>
+						<option value="Support">4. Support</option>
+						<option value="HardSupport">5. Hard Support</option>
+					</select>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label for="played">How long you have played Dota 2?</label>
+				</div>
+				<div class="inputTab">
+					<ul style="list-style: none">
+						<li class="radio"><label>0-250 Hours<input type="radio" name="radio-button" value="1" class="played"></label></li>
+						<li class="radio"><label>250-500 Hours<input type="radio" name="radio-button" value="2" class="played"></label></li>
+						<li class="radio"><label>500-1000 Hours<input type="radio" name="radio-button" value="3" class="played"></label></li>
+						<li class="radio"><label>1000-1500 Hours<input type="radio" name="radio-button" value="4" class="played"></label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label for="teams">Choose yout favourite TI8 teams</label>
+				</div>
+				<div class="inputTab">
+					<ul style="list-style: none">						
+						<li class="checkbox"><label><input name="teams" value="1" type="checkbox" class="favTeams">Liquid</label></li>
+						<li class="checkbox"><label><input name="teams" value="2" type="checkbox" class="favTeams">Virtus Pro</label></li>
+						<li class="checkbox"><label><input name="teams" value="3" type="checkbox" class="favTeams">Evil Geniuses</label></li>
+						<li class="checkbox"><label><input name="teams" value="4" type="checkbox" class="favTeams">Fnatic</label></li>
+						<li class="checkbox"><label><input name="teams" value="5" type="checkbox" class="favTeams">OG</label></li>
+						<li class="checkbox"><label><input name="teams" value="6" type="checkbox" class="favTeams">PSG.LGD</label></li>
+						<li class="checkbox"><label><input name="teams" value="7" type="checkbox" class="favTeams">Team Secret</label></li>
+						<li class="checkbox"><label><input name="teams" value="8" type="checkbox" class="favTeams">Mineski</label></li>
+						<li class="checkbox"><label><input name="teams" value="9" type="checkbox" class="favTeams">Newbee</label></li>
+						<li class="checkbox"><label><input name="teams" value="10" type="checkbox" class="favTeams">Vici Gaming</label></li>
+						<li class="checkbox"><label><input name="teams" value="11" type="checkbox" class="favTeams">VGJ.Thunder</label></li>
+						<li class="checkbox"><label><input name="teams" value="12" type="checkbox" class="favTeams">TNC Predator</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="labels">
+					<label for="comment">Give me your dota play style</label>
+				</div>
+				<div class="inputTab">
+					<textarea class="inputField" id="comment" style="height: 75px;resize: vertical;" name="comment" placeholder="Enter your explanation here..."></textarea>
+				</div>
+			</div>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
